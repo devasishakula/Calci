@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="main">
+		<h1 id="heading">Calculator App</h1>
+		<form>
+			<table cellspacing="5" cellpadding="5">
+				<tr>
+					<td>
+						<input id="fn" type="number" placeholder="First Number">
+					</td>
+					<td>
+						<h1 id="op1">+</h1>
+					</td>
+					<td>
+						<input id="sn" type="number" placeholder="Second Number">
+					</td>
+					<td>
+						<h1 id="op2">=</h1>
+					</td>
+					<td>
+						<input id="res" type="text" value ="RESULT" readonly>
+					</td>
+				</tr>
+			</table>
+			<table cellspacing="5" cellpadding="5">
+				<tr>
+					<th>
+						<h3 id="choose">Choose Operator :</h3>
+					</th>
+					<td>
+						<input type="button" id="pl" value="+" onclick="add();">
+					</td>
+					<td>
+						<input type="button" id="min" value="-" onclick="sub();">
+					</td>
+					<td>
+						<input type="button" id="divide" value="/" onclick="div();">
+					</td>
+					<td>
+						<input type="button" id="ml" value="*" onclick="mul();">
+					</td>
+					<td>
+						<input type="button" id="md" value="%" onclick="mod();">
+					</td>
+					<td>
+						<input type="button" id="pwr" value="**" onclick="pow();">
+					</td>
+					<td>
+						<input type="reset" value="CLEAR" onclick="clr();">
+					</td>
+				</tr>
+			</table>
+		</form>
+		<footer>
+			<p>Developed and Maintained by @Deva &copy 2021</p>
+		</footer>
+	</div>
+	<script>
+		function add()
+		{
+			var a,b,c;
+	        a=Number(document.getElementById("fn").value);
+	        b=Number(document.getElementById("sn").value);
+	        let Oper=document.getElementById("op1");
+	        Oper.innerText='+';
+	        c=a+b;
+	        document.getElementById("res").value=c; 
+		}
+		function sub()
+		{
+			var a,b,c;
+	        a=Number(document.getElementById("fn").value);
+	        b=Number(document.getElementById("sn").value);
+	        let Oper=document.getElementById("op1");
+	        Oper.innerText='-';
+	        c=a-b;
+	        document.getElementById("res").value=c; 
+		}
+		function div()
+		{
+			var a,b,c;
+	        a=Number(document.getElementById("fn").value);
+	        b=Number(document.getElementById("sn").value);
+	        let Oper=document.getElementById("op1");
+	        Oper.innerText='/';
+	        c=a/b;
+	        document.getElementById("res").value=c; 
+		}
+		function mul()
+		{
+			var a,b,c;
+	        a=Number(document.getElementById("fn").value);
+	        b=Number(document.getElementById("sn").value);
+	        let Oper=document.getElementById("op1");
+	        Oper.innerText='*';
+	        c=a*b;
+	        document.getElementById("res").value=c; 
+		}
+		function mod()
+		{
+			var a,b,c;
+	        a=Number(document.getElementById("fn").value);
+	        b=Number(document.getElementById("sn").value);
+	        let Oper=document.getElementById("op1");
+	        Oper.innerText='%';
+	        c=a%b;
+	        document.getElementById("res").value=c; 
+		}
+		function pow()
+		{
+			var a,b,c;
+	        a=Number(document.getElementById("fn").value);
+	        b=Number(document.getElementById("sn").value);
+	        let Oper=document.getElementById("op1");
+	        Oper.innerText='**';
+	        c=a**b;
+	        document.getElementById("res").value=c; 
+		}
+		function clr()
+		{
+			let Oper=document.getElementById("op1");
+	        Oper.innerText='+';
+		}
+	</script>
+</body>
+</html>

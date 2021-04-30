@@ -1,0 +1,84 @@
+div
+{
+	margin:70px auto;
+	border:1px solid black;
+	border-radius: 20px;
+	overflow: hidden;
+	width:900px;
+}
+#heading
+{
+	display: block;
+	padding:20px;
+	background: linear-gradient(45deg,navy,cyan);
+	margin: 0px;
+	color:white;
+	font-family: Arial;
+}
+input[type="number"],input[type="text"]
+{
+	border-radius: 10px;
+	width:200px;
+	height:20px;
+	padding: 10px;
+	border:2px solid black;
+	text-align: center;
+	outline: none;
+	font-size: 20px;
+}
+#choose
+{
+	font-family: Arial;
+}
+#op1,#op2
+{
+	padding:5px;
+	background: linear-gradient(45deg,navy,cyan);
+	color:white;
+	width:40px;
+	text-align: center;
+	border-radius: 20px;
+}
+#pl,#min,#divide,#ml,#pwr,#md
+{
+	padding: 10px;
+	border:none;
+	width:40px;
+	color: white;
+	outline: none;
+	background: linear-gradient(45deg,navy,cyan);
+	text-align: center;
+	border-radius: 10px;
+}
+input[type="text"],input[type="reset"]
+{
+	border:none;
+	outline: none;
+	text-align: center;
+	color: white;
+	font-family: Arial;
+}
+input[type="text"]
+{
+	background: linear-gradient(45deg,black,limegreen);
+}
+input[type="reset"]
+{
+	font-size: 20px;
+	background: linear-gradient(45deg,black,red);
+	width:150px;
+	height:40px;
+	border-radius: 10px;
+}
+footer
+{
+	border:1px solid blue;
+	padding:20px;
+	text-align: center;
+}
+footer p
+{
+	font-size: 15px;
+	font-family: Arial;
+	color: blue;
+}
